@@ -1,0 +1,67 @@
+/* Dark Theme */
+body {
+    background-color: #121212;
+    color: #d3d3d3;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header h1 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: #d3d3d3;
+    font-size: 1rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+  }
+  
+  /* Links */
+  a {
+    color: #e0e0e0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
