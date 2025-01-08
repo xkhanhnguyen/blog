@@ -51,7 +51,7 @@ sass:
 # Navbar page list
 nav:
   - title: Blog
-    url: /archive
+    url: /blog/archive
 
   - title: About
-    url: /about
+    url: /blog/about
