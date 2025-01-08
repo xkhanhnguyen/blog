@@ -4,8 +4,9 @@ title: About
 permalink: /about/
 ---
 
-<p class="message">
-  Hey there!
-</p>
-
 ## Hello world
+Xin chao 123
+
+<p class="message">
+Viết điều gì tiếp theo
+</p>

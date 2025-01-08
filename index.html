@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+paginate: 3
 ---
 
 <div class="posts">
@@ -14,20 +15,41 @@ title: Home
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    {{ post.content }}
+    <!-- Display a short excerpt of the post -->
+    <div class="post-excerpt">
+      {{ post.excerpt }}
+    </div>
+
+    <!-- Link to the full post -->
+    <a class="read-more" href="{{ post.url | relative_url }}">Read more</a>
   </article>
   {% endfor %}
 </div>
 
 <div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+  <div class="pagination-nav">
+    {% if paginator.previous_page %}
+      <a class="pagination-item prev" href="{{ paginator.previous_page_path | relative_url }}">
+        <span class="arrow">&#8592;</span> Prev
+      </a>
+    {% else %}
+      <span class="pagination-item prev disabled">
+        <span class="arrow">&#8592;</span> Prev
+      </span>
+    {% endif %}
+
+    <span class="pagination-info">
+      Page {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+
+    {% if paginator.next_page %}
+      <a class="pagination-item next" href="{{ paginator.next_page_path | relative_url }}">
+        Next <span class="arrow">&#8594;</span>
+      </a>
+    {% else %}
+      <span class="pagination-item next disabled">
+        Next <span class="arrow">&#8594;</span>
+      </span>
+    {% endif %}
+  </div>
 </div>

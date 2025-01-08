@@ -1,52 +1,61 @@
-// Pagination
-//
-// Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
-// there are no more previous or next posts to show.
-
 .pagination {
   display: flex;
-  margin: 0 -1.5rem var(--spacer);
+  justify-content: center; /* Center the pagination */
+  align-items: center;
+  margin: 2rem 0;
   color: grey;
   text-align: center;
 }
 
-// Pagination items can be `span`s or `a`s
-.pagination-item {
-  display: block;
-  padding: var(--spacer);
-  text-decoration: none;
-  border: solid var(--border-color);
-  border-width: 1px 0;
-
-  &:first-child {
-    margin-bottom: -1px;
-  }
+.pagination-nav {
+  display: flex;
+  align-items: center;
 }
 
-// Only provide a hover state for linked pagination items
+.pagination-item {
+  margin: 0 3px; /* Reduced space between pagination items */
+  text-decoration: none;
+  padding: 5px 12px; /* Adjusted padding for a more compact look */
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
 a.pagination-item:hover {
-  background-color: var(--border-color);
+  background-color: #eee;
+}
+
+.pagination-item.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination-item.prev,
+.pagination-item.next {
+  font-size: 16px;
+}
+
+.pagination-info {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555; /* Slightly darker color for better contrast */
+  margin: 0 8px; /* Added some space around the page number */
+}
+
+.pagination-info span {
+  color: #444; /* Darker color for the page number */
+}
+
+.arrow {
+  font-size: 14px;
+  margin: 0 5px; /* Reduced space between the arrow and text */
 }
 
 @media (min-width: 30em) {
-  .pagination {
-    margin: var(--spacer-3) 0;
+  .pagination-nav {
+    width: auto;
+    justify-content: center; /* Ensure the pagination is centered on wider screens */
   }
-
   .pagination-item {
-    float: left;
-    width: 50%;
     border-width: 1px;
-
-    &:first-child {
-      margin-bottom: 0;
-      border-top-left-radius: var(--border-radius);
-      border-bottom-left-radius: var(--border-radius);
-    }
-    &:last-child {
-      margin-left: -1px;
-      border-top-right-radius: var(--border-radius);
-      border-bottom-right-radius: var(--border-radius);
-    }
   }
 }

@@ -1,12 +1,30 @@
 // Messages
 //
-// Show alert messages to users. You may add it to single elements like a `<p>`,
+// Show  messages to users. You may add it to single elements like a `<p>`,
 // or to a parent if there are multiple elements to show.
 
 .message {
-  padding: var(--spacer);
-  margin-bottom: var(--spacer);
-  color: var(--gray-900);
-  background-color: var(--yellow-100);
-  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: rgba(240, 165, 15, .13); 
+  color: #d9d9d9; /* text */
+  border-radius: var(--global-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  // font-weight: 500;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message a {
+  color: #d9d9d9;
+  text-decoration: underline;
+}
+
+.message a:hover {
+  text-decoration: none;
 }

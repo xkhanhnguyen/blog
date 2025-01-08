@@ -28,7 +28,7 @@ markdown: kramdown
 
 # Build settings
 permalink: pretty
-paginate: 1
+paginate: 3
 plugins:
   - jekyll-gist
   - jekyll-paginate
