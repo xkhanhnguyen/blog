@@ -22,7 +22,7 @@ title: Nothingaholic
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blog của một người không biết làm gì
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://xkhanhnguyen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 
@@ -51,9 +51,9 @@ sass:
 # Navbar page list
 nav:
   - title: Blog
-    url: /blog/archive
+    url:  /blog/archive
 
   - title: About
-    url: /blog/about
+    url:  /blog/about
 
 permalink: /:title/
