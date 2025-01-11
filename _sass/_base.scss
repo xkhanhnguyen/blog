@@ -8,10 +8,12 @@
 
 body {
   margin: 0;
-  font-family: var(--body-font);
+  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: var(--font-body);
+  // font-family: var(--body-font);
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
-  color: var(--body-color);
+  color: #bfbfbf;
   background-color: var(--body-bg);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -67,4 +69,10 @@ mark {
   padding: .15rem;
   background-color: var(--yellow-100);
   border-radius: .125rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: calc(.1 + var(1.6));
+  margin: 0 0 calc(1rem*2);
 }
