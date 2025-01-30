@@ -22,4 +22,4 @@ A few things stay with me:
   
 There’s still half the book left, but already, it feels like a quiet kind of inspiration. A reminder that hardship doesn’t erase hope.
 
-People say turning 30 is a milestone, but maybe it’s just another step forward—one of many. Some paths are easy, some are hard, but as long as I keep moving, I’m still on my way. Even when progress feels invisible, even when the days blur together, I have to remind myself—I can get through this. Every step counts, even the small ones. One day, I’ll look back and see—not just where I’ve been, but how far I’ve come.
+Turning 30 sounds big, but maybe it’s just another step—one of many. Some days feel easy, some feel heavy, but as long as I keep moving, I’m still going somewhere. Even when it feels slow, even when nothing seems to change, I have to remind myself—I can get through this. Every little step adds up. One day, I’ll look back and see just how far I’ve come.
